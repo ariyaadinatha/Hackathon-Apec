@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function() {return redirect()->to("/landing");});
+Route::get('/landing', 'PageRequestController@viewLanding');
+Route::get('/umkm', 'UmkmController@show');
+Route::get('/umkm/{slug}', 'UmkmController@show');
+Route::get('/register', 'PageRequestController@viewRegister');
+
 
 Auth::routes();
 
