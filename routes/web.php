@@ -16,8 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function() {return redirect()->to("/landing");});
 Route::get('/landing', 'PageRequestController@viewLanding');
 Route::get('/register', 'PageRequestController@viewRegister');
+Route::get('/user', 'PageRequestController@viewUser');
 
 Route::get('/umkm', 'UmkmController@viewIndex');
+Route::get('/umkm/create', 'UmkmController@create');
+Route::post('/umkm/store', 'UmkmController@store');
 Route::get('/umkm/{umkm:name}', 'UmkmController@show');
 
 

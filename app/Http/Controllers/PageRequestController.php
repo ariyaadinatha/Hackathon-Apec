@@ -19,6 +19,11 @@ class PageRequestController extends Controller
      // ## -- 3. View Register
      public function viewRegister(){
         return view("auth.register");
+    } 
+
+     // ## -- 4. View User
+     public function viewUser(){
+        return view("user.userIndex");
     }   
     
 }
