@@ -25,12 +25,13 @@ class UmkmController extends Controller
 
     public function store(Request $request)
     {
-        $umkm = new Umkm;
-        $umkm->name = $request->name;
-        $umkm->category = $request->category;
-        $umkm->description = $request->description;
-        $umkm->rating = $request->rating;
-        $umkm->save();
+
+        Umkm::create([
+            'name' => $request->name,
+            'category' => $request->category,
+            'description' => $request->description,
+            'rating' => $request->rating,
+        ]);
 
         return redirect()->to('/umkm/');
     }

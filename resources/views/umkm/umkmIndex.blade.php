@@ -8,7 +8,7 @@
 @foreach($umkms as $umkm)
 <div class="#">
     <h4> <a href="/umkm/{{ $umkm->name }}"> {{ $umkm->name}} </a> </h4>
-    Category : {{ $umkm->category }}
+    Category : {{ $umkm->category->name }}
     <br> Description : {{ $umkm->description}}
     <br>
 </div>

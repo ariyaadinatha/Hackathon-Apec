@@ -23,6 +23,8 @@ Route::get('/umkm/create', 'UmkmController@create');
 Route::post('/umkm/store', 'UmkmController@store');
 Route::get('/umkm/{umkm:name}', 'UmkmController@show');
 
+Route::get('/categories/{category:name}', 'CategoryController@show');
+
 
 
 Auth::routes();
