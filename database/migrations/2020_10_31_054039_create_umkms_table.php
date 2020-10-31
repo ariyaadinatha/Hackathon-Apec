@@ -17,7 +17,7 @@ class CreateUmkmsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('category');
-            $table->string('description');
+            $table->text('description');
             $table->tinyInteger('rating');
             $table->timestamps();
         });

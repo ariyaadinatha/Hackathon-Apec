@@ -7,9 +7,14 @@ use Illuminate\Http\Request;
 
 class UmkmController extends Controller
 {
-    public function show($name)
+    public function show(Umkm $umkm)
     {
-        $umkm = Umkm::where('name', $name)->firstOrFail();
-        return view('umkm.umkmIndex', compact('umkm'));
+        return view('umkm.umkmSingle', compact('umkm'));
+    }
+
+    public function viewIndex()
+    {
+        $umkms = Umkm::get();
+        return view('umkm.umkmIndex', ['umkms' => $umkms]);
     }
 }
