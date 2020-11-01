@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&display=swap");
+
+body {
+    margin: 0;
+    font-family: "IM Fell French Canon";
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    padding: 3vw 7vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7vw;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 2vw;
+    font-style: italic;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: center;
+    background-image: url("/img/leafgreenbar-main.png");
+    background-repeat: no-repeat;
+    background-position-y: 12vw;
+}
+
+.left-hero img {
+    width: 16vw;
+}
+
+.right-hero {
+    width: 25%;
+    margin-left: 8vw;
+    padding-top: 0.2vw;
+}
+
+.right-hero h1 {
+    font-size: 3.5vw;
+    font-weight: normal;
+}
+
+.right-hero p {
+    font-size: 1.6vw;
+}
+
+.right-hero input {
+    width: 100%;
+    font-family: "IM Fell French Canon";
+    padding: 1.4vw;
+    border-radius: 0.2em;
+    border: black solid 1.5px;
+    font-size: 1.4vw;
+}
+
+.main-scroll {
+    margin-bottom: 6vw;
+}
+
+.main-scroll h2 {
+    font-size: 3vw;
+    font-weight: normal;
+    margin-bottom: 1vw;
+}
+
+.main-scroll .item {
+    background: url("/img/sample1.jpg");
+    background-size: 100%;
+    border-radius: 0.2em;
+    padding-top: 5em;
+    min-width: 20%;
+    margin-bottom: 1em;
+    padding-bottom: 0.1em;
+    margin-right: 1em;
+}
+
+.main-scroll .item a {
+    color: white;
+    font-size: 1.8vw;
+    padding-top: 0.6vw;
+}
+
+.main-scroll .item p {
+    color: white;
+    margin-top: 0;
+    padding-bottom: 0.6vw;
+}
+
+.main-scroll .item-text {
+    margin-left: 1.5vw;
+    background: rgb(143, 143, 143, 0.7);
+    width: 70%;
+}
+
+.main-scroll .items-container {
+    display: flex;
+}
+
+.main-1 {
+    background: url("/img/background-main-scroll-secondpart.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+
+.main-2 {
+    background: url("/img/background-main-scroll-thirdpart.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}

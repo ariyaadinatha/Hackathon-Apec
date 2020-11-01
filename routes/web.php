@@ -21,6 +21,7 @@ Route::get('/user', 'PageRequestController@viewUser');
 Route::get('/umkm', 'UmkmController@viewIndex');
 Route::get('/umkm/create', 'UmkmController@create');
 Route::post('/umkm/store', 'UmkmController@store');
+Route::post('/umkm/post', 'UmkmController@post');
 Route::get('/umkm/{umkm:name}', 'UmkmController@show');
 
 Route::get('/categories/{category:name}', 'CategoryController@show');

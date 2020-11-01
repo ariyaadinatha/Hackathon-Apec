@@ -1,7 +1,5 @@
 @extends('template.main')
 
-@section('content')
-
 
 <h2> All Umkm </h2>
 
