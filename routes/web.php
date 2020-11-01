@@ -25,6 +25,8 @@ Route::get('/umkm/{umkm:name}', 'UmkmController@show');
 
 Route::get('/categories/{category:name}', 'CategoryController@show');
 
+Route::get('/rating/{rating:umkm_id}', 'RatingController@viewRating');
+
 
 
 Auth::routes();

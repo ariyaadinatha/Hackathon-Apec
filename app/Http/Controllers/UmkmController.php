@@ -3,13 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Umkm;
+use App\Rating;
 use Illuminate\Http\Request;
 
 class UmkmController extends Controller
 {
     public function show(Umkm $umkm)
     {
-        return view('umkm.umkmSingle', compact('umkm'));
+        $crot = $umkm->id;
+        $umkm = Umkm::find($crot);
+        $ratings = Rating::where('umkm_id', $crot)
+                            ->get();
+        return view('umkm.umkmSingle', ['umkm' => $umkm,
+                                        'ratings' => $ratings]);
     }
 
     public function viewIndex()

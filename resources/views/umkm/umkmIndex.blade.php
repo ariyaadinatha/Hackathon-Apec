@@ -10,6 +10,6 @@
     <h4> <a href="/umkm/{{ $umkm->name }}"> {{ $umkm->name}} </a> </h4>
     Category : <a href=/categories/{{$umkm->category->name}}> {{$umkm->category->name}} </a>
     <br> Description : {{ $umkm->description}}
-    <br> Owner : {{ $umkm->user->name }}
+    <br> Owner : 
 </div>
 @endforeach

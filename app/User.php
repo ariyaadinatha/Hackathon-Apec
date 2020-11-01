@@ -41,4 +41,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Umkm::class)->orderBy('created_at', 'DESC');
     }
+
+    public function ratings()
+    {
+        return $this->hasMany(Rating::class)->orderBy('created_at', 'DESC');
+    }
 }

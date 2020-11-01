@@ -8,8 +8,8 @@ use Faker\Generator as Faker;
 $factory->define(Umkm::class, function (Faker $faker) {
     return [
         'name' => $faker->company,
+        'user_id' => $faker->numberBetween($min = 0, $max = 9),
         'category_id' => $faker->numberBetween($min = 0, $max = 9),
         'description' => $faker->paragraph(1),
-        'rating' => $faker->numberBetween($min = 0, $max = 5),
     ];
 });
