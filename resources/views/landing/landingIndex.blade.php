@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends("template.main")
 
-
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link rel="stylesheet" href="/css/main.css">
-    <title>Document</title>
-</head>
-
-
-<body>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <a href="#">Travée</a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Vouchers</a></li>
-                    <li><a href="#">Profile</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-
+@section('content')
     <div class="hero">
         <div class="container">
 
@@ -196,7 +170,4 @@
         </div>
     </div>
 
-
-</body>
-
-</html>
+@endsection

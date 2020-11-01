@@ -1,12 +1,28 @@
-@extends("template.main")
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
     <section class="umkm-detail-title">
         <article class="container">
-            <h1 class="title"> {{ $umkm->name}} </h1>
+            <h1 class="title">
+                /Nusa Island/
+            </h1>
             <div class="detail">
                 <div class="desc">
-                {{ $umkm->description}}
+                    Nusa Penida is an island southeast of Indonesia's island Bali and a district of Klungkung Regency
+                    that includes the
+                    neighbouring small island of Nusa Lembongan. The Badung Strait separates the island and Bali. The
+                    interior of Nusa Penida
+                    is hilly with a maximum altitude of 524 metres. It is drier than the nearby island of Bali. It is
+                    one of the major tourist
+                    attractions among the three Nusa islands and is rich in natural beauty.
                 </div>
             </div>
             <div class="location">
@@ -64,45 +80,36 @@
 
     <section class="user-review container">
         <div class="write-review">
-            <form action="/umkm/post" enctype="multipart/form-data" method="post">
-            @csrf
-
-                @if ($ratings->count()>0)
-                    <h2>Safety Reviews (Overall {{$padded}} stars)</h2>
-                @else
-                    <h2>Safety Reviews (No review)</h2>
-                @endif
-                <h3>Give your safety rating here</h3>
-
-                <input type="text" class="review" placeholder="review..." name="comment" value="{{ old('comment') }}" required autocomplete="comment" autofocus>
-                <input type="hidden" class="review" placeholder="review..." name="umkm_id" value="{{$umkm->id}}" required autocomplete="umkm_id" autofocus>
-                <div class="write-review-bottom">
-                    <input type="text" class="rating" placeholder="1 - 5 stars" name="star" value="{{ old('star') }}" required autocomplete="star" autofocus>
-                    <button>Submit</button>
-                </div>
-            </form>
+            <h2>Safety Reviews (Overall 4.3 stars)</h2>
+            <h3>Give your safety rating here</h3>
+            <input type="text" class="review" placeholder="review...">
+            <div class="write-review-bottom">
+                <input type="text" class="rating" placeholder="1 - 5 stars">
+                <button>Submit</button>
+            </div>
         </div>
 
         <div class="top-review">
             <ul>
-            @foreach($ratings as $rating)
                 <li>
-                    <h3> {{$rating->user->name}} </h3>
-                    <p>"{{$rating->comment}}"
+                    <h3>Name</h3>
+                    <p>"Pretty impressed by the administration, although I saw a couple of people not wearing masks."
                     </p>
                     <div class="rating-score">
-                        <?php
-                            echo str_repeat("★", $rating->star);
-                        ?>
+                        ★★★★★
                     </div>
                 </li>
-            @endforeach
+                <li>
+                    <h3>Name</h3>
+                    <p>"Pretty impressed by the administration, although I saw a couple of people not wearing masks."
+                    </p>
+                    <div class="rating-score">
+                        ★★★★★
+                    </div>
+                </li>
             </ul>
         </div>
     </section>
-@endsection
-
+</body>
 
 </html>
-
-

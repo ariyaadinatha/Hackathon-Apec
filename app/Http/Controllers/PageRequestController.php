@@ -24,6 +24,11 @@ class PageRequestController extends Controller
      // ## -- 4. View User
      public function viewUser(){
         return view("user.userIndex");
+    } 
+
+     // ## -- 5. View Test
+     public function viewTest(){
+        return view("test.testIndex");
     }   
     
 }

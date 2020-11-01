@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&display=swap");
+
+body {
+    margin: 0;
+    font-family: "IM Fell French Canon";
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    padding: 3vw 7vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7vw;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 2vw;
+    font-style: italic;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: center;
+    background-image: url("/img/leafgreenbar-main.png");
+    background-repeat: no-repeat;
+    background-position-y: 12vw;
+}
+
+.left-hero img {
+    width: 16vw;
+}
+
+.right-hero {
+    width: 25%;
+    margin-left: 8vw;
+    padding-top: 0.2vw;
+}
+
+.right-hero h1 {
+    font-size: 3.5vw;
+    font-weight: normal;
+}
+
+.right-hero p {
+    font-size: 1.6vw;
+}
+
+.right-hero input {
+    width: 100%;
+    font-family: "IM Fell French Canon";
+    padding: 1.4vw;
+    border-radius: 0.2em;
+    border: black solid 1.5px;
+    font-size: 1.4vw;
+}
+
+.main-scroll {
+    margin-bottom: 6vw;
+}
+
+.main-scroll h2 {
+    font-size: 3vw;
+    font-weight: normal;
+    margin-bottom: 1vw;
+}
+
+.main-scroll .item {
+    background: url("/img/sample1.jpg");
+    background-size: 100%;
+    border-radius: 0.2em;
+    padding-top: 5em;
+    width: 20%;
+    margin-bottom: 1em;
+    padding-bottom: 0.1em;
+    margin-right: 1em;
+}
+
+.main-scroll .item a {
+    color: white;
+    font-size: 1.8vw;
+    padding-top: 0.6vw;
+}
+
+.main-scroll .item p {
+    color: white;
+    margin-top: 0;
+    padding-bottom: 0.6vw;
+}
+
+.main-scroll .item-text {
+    margin-left: 1.5vw;
+    background: rgb(143, 143, 143, 0.7);
+    width: 70%;
+}
+
+.main-scroll .items-container {
+    display: flex;
+}
+
+.main-1 {
+    background: url("/img/background-main-scroll-secondpart.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+
+.main-2 {
+    background: url("/img/background-main-scroll-thirdpart.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+
+/*UMKM Detail*/
+
+.umkm-detail-title {
+    text-align: center;
+    max-width: 100%;
+    background-image: url("/img/nusapenida.jpg");
+    background-size: cover;
+    padding-bottom: 0;
+    margin-top: 7vw;
+    overflow: auto;
+}
+
+.umkm-detail-title .title {
+    text-shadow: -2px 3px 0px #000000;
+    color: #ffffff;
+    font-size: 4vw;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    margin: auto;
+    text-align: center;
+    padding-top: 6vw;
+    padding-bottom: 1vw;
+}
+
+.umkm-detail-title .detail {
+    background-color: rgba(75, 75, 75, 0.33);
+    padding-left: 14vw;
+    padding-right: 14vw;
+    height: fit-content;
+}
+
+.umkm-detail-title .desc {
+    height: 100%;
+    text-shadow: -2px 2px 0px #000000;
+    font-family: "IM Fell French Canon", serif;
+    color: #ffffff;
+    font-size: 1.3vw;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.umkm-detail-title .location {
+    text-shadow: -2px 2px 0px #000000;
+    font-family: "IM Fell French Canon", serif;
+    color: #ffffff;
+    font-size: 1.2vw;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: 2.5vw;
+}
+
+.review-info {
+    font-family: "IM Fell French Canon", serif;
+    color: #000000;
+    font-size: 1.1vw;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: auto;
+    width: 20%;
+    margin-top: 3.8vw;
+    margin-bottom: 1.2vw;
+}
+
+.review-info img {
+    margin-top: 2vw;
+    text-align: center;
+    width: 10%;
+}
+
+.prot h3 {
+    font-size: 3vw;
+    margin-bottom: 0;
+}
+
+.prot h4 {
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+}
+
+.prot .health {
+    display: flex;
+}
+
+.prot article {
+    margin-right: 5vw;
+    width: 50%;
+}
+
+.write-review h2 {
+    font-size: 3vw;
+}
+
+.review {
+    width: 30%;
+    font-family: "IM Fell French Canon";
+    padding: 1.4vw;
+    border-radius: 0.2em;
+    border: black solid 1.5px;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+}
+
+.write-review-bottom {
+    width: 30%;
+    display: flex;
+}
+
+.write-review-bottom input {
+    width: 30%;
+    font-family: "IM Fell French Canon";
+    padding: 0.7vw;
+    border-radius: 0.2em;
+    border: black solid 1.5px;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+}
+
+.write-review-bottom button {
+    font-family: "IM Fell French Canon";
+    padding: 0.7vw;
+    border-radius: 0.2em;
+    border: black solid 1.5px;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+}
+
+.top-review h3 {
+    font-size: 1.8vw;
+    margin-bottom: 0.2vw;
+}
+
+.top-review p {
+    margin: 0.2vw;
+}

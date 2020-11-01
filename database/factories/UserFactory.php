@@ -27,7 +27,6 @@ $factory->define(User::class, function (Faker $faker) {
         'city' => $faker->city,
         'address' => $faker->address,
         'phone' => $faker->phoneNumber,
-        'voucher' => $faker->word,
         'remember_token' => Str::random(10),
     ];
 });

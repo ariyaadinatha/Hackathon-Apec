@@ -16,8 +16,11 @@ class UmkmController extends Controller
         $umkm = Umkm::find($crot);
         $ratings = Rating::where('umkm_id', $crot)
                             ->get();
+        $star = Rating::where('umkm_id', $crot)->avg('star');
+        $padded = sprintf('%0.2f', $star);
         return view('umkm.umkmSingle', ['umkm' => $umkm,
-                                        'ratings' => $ratings]);
+                                        'ratings' => $ratings,
+                                        'padded' => $padded]);
     }
 
     public function viewIndex()
@@ -48,7 +51,7 @@ class UmkmController extends Controller
         
         Rating::create([
             'user_id' => $id,
-            'umkm_id' => 1,
+            'umkm_id' => $request->umkm_id,
             'comment' => $request->comment,
             'star' => $request->star,
         ]);

@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('city')->nullable();
             $table->string('address')->nullable();
             $table->string('phone')->nullable();
-            $table->string('voucher')->nullable();
+            $table->integer('saldo')->default('50');
             $table->rememberToken();
             $table->timestamps();
         });
