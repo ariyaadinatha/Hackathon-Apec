@@ -17,13 +17,13 @@ a {
 }
 
 .container {
-    padding: 1.5em 5em;
+    padding: 3vw 7vw;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    font-size: 1.5em;
+    font-size: 1.7vw;
 }
 
 nav ul {
@@ -31,7 +31,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1em;
+    margin: 0 2vw;
     font-style: italic;
 }
 
@@ -40,46 +40,45 @@ nav ul li {
     justify-content: center;
     background-image: url("../img/leafgreenbar-main.png");
     background-repeat: no-repeat;
-    background-position-y: 10em;
+    background-position-y: 12vw;
 }
 
 .left-hero img {
-    width: 14em;
+    width: 16vw;
 }
 
 .right-hero {
     width: 25%;
-    height: 3em;
-    margin-left: 6em;
-    padding-top: 0.1em;
+    margin-left: 8vw;
+    padding-top: 0.2vw;
 }
 
 .right-hero h1 {
-    font-size: 3em;
+    font-size: 3.5vw;
     font-weight: normal;
 }
 
 .right-hero p {
-    font-size: 1.2em;
+    font-size: 1.6vw;
 }
 
 .right-hero input {
     width: 100%;
     font-family: "IM Fell French Canon";
-    padding: 1em;
+    padding: 1.4vw;
     border-radius: 0.2em;
     border: black solid 1.5px;
-    font-size: 1.1em;
+    font-size: 1.4vw;
 }
 
 .main-scroll {
-    margin-bottom: 5em;
+    margin-bottom: 6vw;
 }
 
 .main-scroll h2 {
-    font-size: 2.5em;
+    font-size: 3vw;
     font-weight: normal;
-    margin-bottom: 0.5em;
+    margin-bottom: 1vw;
 }
 
 .main-scroll .item {
@@ -95,18 +94,18 @@ nav ul li {
 
 .main-scroll .item a {
     color: white;
-    font-size: 1.4em;
-    padding-top: 0.3em;
+    font-size: 1.8vw;
+    padding-top: 0.6vw;
 }
 
 .main-scroll .item p {
     color: white;
     margin-top: 0;
-    padding-bottom: 0.3em;
+    padding-bottom: 0.6vw;
 }
 
 .main-scroll .item-text {
-    margin-left: 1em;
+    margin-left: 1.5vw;
     background: rgb(143, 143, 143, 0.7);
     width: 70%;
 }
