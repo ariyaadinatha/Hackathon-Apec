@@ -38,7 +38,7 @@ nav ul li {
 .hero .container {
     display: flex;
     justify-content: center;
-    background-image: url("../img/leafgreenbar-main.png");
+    background-image: url("./img/leafgreenbar-main.png");
     background-repeat: no-repeat;
     background-position-y: 12vw;
 }
@@ -82,7 +82,7 @@ nav ul li {
 }
 
 .main-scroll .item {
-    background: url("../img/sample1.jpg");
+    background: url("./img/sample1.jpg");
     background-size: 100%;
     border-radius: 0.2em;
     padding-top: 5em;
@@ -115,14 +115,14 @@ nav ul li {
 }
 
 .main-1 {
-    background: url("../img/background-main-scroll-secondpart.png");
+    background: url("./img/background-main-scroll-secondpart.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
 }
 
 .main-2 {
-    background: url("../img/background-main-scroll-thirdpart.png");
+    background: url("./img/background-main-scroll-thirdpart.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -272,4 +272,50 @@ nav ul li {
 
 .top-review p {
     margin: 0.2vw;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form h1 {
+    font-size: 5.5vw;
+    font-weight: 400;
+    margin-bottom: 0.3em;
+}
+
+.login-form input {
+    width: 30%;
+    font-family: "IM Fell French Canon";
+    margin: 0.5vw 0;
+    padding: 0.5em 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+.login-opt {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-btn {
+    border-style: none;
+    padding: 0.5em 2em;
+    background: #ddd;
+    font-size: 1em;
+    margin-top: 1.2em;
+    font-style: italic;
+    font-family: "IM Fell French Canon";
+}
+
+.login {
+    background: url("./img/background-signin.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -20vw;
+    padding-bottom: 9.5vw;
 }
