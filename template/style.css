@@ -319,3 +319,17 @@ nav ul li {
     background-position-y: -20vw;
     padding-bottom: 9.5vw;
 }
+
+.register {
+    background: url("./img/background-main-scroll-thirdpart.png") no-repeat
+        center fixed;
+    background-size: cover;
+    padding-bottom: 5vw;
+    /* background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -20vw; */
+}
+
+.register .login-form {
+    margin-top: -3em;
+}
