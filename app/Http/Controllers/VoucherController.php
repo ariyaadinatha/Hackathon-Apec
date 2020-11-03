@@ -12,4 +12,11 @@ class VoucherController extends Controller
         $vouchers = Voucher::get();
         return view('voucher.voucherIndex', ['vouchers' => $vouchers]);
     }
+
+    public function show(Voucher $voucher)
+    {
+        $voucher = Voucher::find($voucher);
+        return view('voucher.voucherSingle', ['voucher' => $voucher]);
+    }
+
 }

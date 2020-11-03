@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="location">
-                Location : Bali, Indonesia
+                Location : {{$umkm->location}}, {{$umkm->country}}
             </div>
         </article>
     </section>
@@ -29,34 +29,13 @@
             <article>
                 <h4>Goverment Protocols</h4>
                 <ul>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et turpis
-                        laoreet, sed congue dui
-                        vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et
-                        turpis
-                        laoreet, sed congue dui
-                        vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et
-                        turpis
-                        laoreet, sed congue dui
-                        vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et
-                        turpis
-                        laoreet, sed congue dui
-                        vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et
-                        turpis
-                        laoreet, sed congue dui
-                        vulputate.</p>
+                    <p> {{$umkm->gov_protocol}} </p>
                 </ul>
             </article>
             <article>
                 <h4>Local Administration Protocols</h4>
                 <ul>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et turpis
-                        laoreet, sed congue dui
-                        vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et
-                        turpis
-                        laoreet, sed congue dui
-                        vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et
-                        t
-                        vulputate.</p>
+                    <p> {{$umkm->protocol}} </p>
                 </ul>
             </article>
         </section>
@@ -101,8 +80,3 @@
         </div>
     </section>
 @endsection
-
-
-</html>
-
-

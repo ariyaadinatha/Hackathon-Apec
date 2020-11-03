@@ -23,9 +23,10 @@ Route::get('/umkm', 'UmkmController@viewIndex');
 Route::get('/umkm/create', 'UmkmController@create');
 Route::post('/umkm/store', 'UmkmController@store');
 Route::post('/umkm/post', 'UmkmController@post');
-Route::get('/umkm/{umkm:name}', 'UmkmController@show');
+Route::get('/umkm/{umkm:id}', 'UmkmController@show');
 
 Route::get('/voucher', 'VoucherController@viewIndex');
+Route::get('/voucher/{voucher:id}', 'VoucherController@show');
 
 
 

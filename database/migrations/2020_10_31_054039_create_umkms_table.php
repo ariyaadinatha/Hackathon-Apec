@@ -16,8 +16,11 @@ class CreateUmkmsTable extends Migration
         Schema::create('umkms', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('location');
+            $table->string('country');
             $table->text('description');
-            $table->tinyInteger('rating')->nullable();
+            $table->text('protocol');
+            $table->text('gov_protocol');
             $table->timestamps();
         });
     }
