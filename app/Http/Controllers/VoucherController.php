@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Voucher;
+use App\Coupon;
+use Auth;
 
 use Illuminate\Http\Request;
 
@@ -15,8 +17,19 @@ class VoucherController extends Controller
 
     public function show(Voucher $voucher)
     {
-        $voucher = Voucher::find($voucher);
+        $crot = $voucher->id;
+        $voucher = Voucher::find($crot);
         return view('voucher.voucherSingle', ['voucher' => $voucher]);
+    }
+
+    public function buy(Request $request)
+    {
+        Coupon::create([
+            'user_id' => Auth::id(),
+            'voucher_id' => $request->voucher_id,
+        ]);
+
+        return redirect()->to('/voucher/');
     }
 
 }

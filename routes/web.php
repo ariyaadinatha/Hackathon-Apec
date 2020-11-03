@@ -26,6 +26,7 @@ Route::post('/umkm/post', 'UmkmController@post');
 Route::get('/umkm/{umkm:id}', 'UmkmController@show');
 
 Route::get('/voucher', 'VoucherController@viewIndex');
+Route::post('/voucher/buy', 'VoucherController@buy');
 Route::get('/voucher/{voucher:id}', 'VoucherController@show');
 
 
