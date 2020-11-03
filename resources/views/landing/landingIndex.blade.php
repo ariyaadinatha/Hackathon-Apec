@@ -21,38 +21,19 @@
             <div class="main-scroll">
                 <h2>Places around you</h2>
                 <div class="items-container">
-                    <div class="item">
-                        <div class="item-text">
-                            <a href="#" class="">Pura Tanah Lot</a>
-                            <p>Safety rating : 5</p>
+
+                    @foreach($umkms->take(5) as $umkm)
+                        <div class="item">
+                            <div class="item-text">
+                                <a href="#" class="title-text">{{$umkm->name}}</a>
+                                <p>Safety rating : 5</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-text">
-                            <a href="#" class="">Pura Tanah Lot</a>
-                            <p>Safety rating : 5</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-text">
-                            <a href="#" class="">Pura Tanah Lot</a>
-                            <p>Safety rating : 5</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-text">
-                            <a href="#" class="">Pura Tanah Lot</a>
-                            <p>Safety rating : 5</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-text">
-                            <a href="#" class="">Pura Tanah Lot</a>
-                            <p>Safety rating : 5</p>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
+
             <div class="main-scroll">
                 <h2>Best Safety ratings</h2>
                 <div class="items-container">

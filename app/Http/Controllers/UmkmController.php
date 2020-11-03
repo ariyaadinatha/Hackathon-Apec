@@ -25,8 +25,10 @@ class UmkmController extends Controller
 
     public function viewIndex()
     {
+        $ratings = Rating::get();
         $umkms = Umkm::get();
-        return view('umkm.umkmIndex', ['umkms' => $umkms]);
+        return view('umkm.umkmIndex', ['umkms' => $umkms,
+                                        'ratings' => $ratings]);
     }
 
     public function create()

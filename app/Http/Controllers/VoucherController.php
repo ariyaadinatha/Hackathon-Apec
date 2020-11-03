@@ -24,12 +24,13 @@ class VoucherController extends Controller
 
     public function buy(Request $request)
     {
+        $user = Auth::id();
         Coupon::create([
             'user_id' => Auth::id(),
             'voucher_id' => $request->voucher_id,
         ]);
 
-        return redirect()->to('/voucher/');
+        return back();
     }
 
 }

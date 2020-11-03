@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Umkm;
+use App\Rating;
 
 use Illuminate\Http\Request;
 
@@ -8,7 +10,10 @@ class PageRequestController extends Controller
 {
     // ## -- 1. View Landing
     public function viewLanding(){
-        return view("landing.landingIndex");
+        $ratings = Rating::get();
+        $umkms = Umkm::get();
+        return view('landing.landingIndex', ['umkms' => $umkms,
+                                        'ratings' => $ratings]);
     }
 
     // ## -- 2. View Webinar
