@@ -25,6 +25,10 @@ Route::post('/umkm/store', 'UmkmController@store');
 Route::post('/umkm/post', 'UmkmController@post');
 Route::get('/umkm/{umkm:name}', 'UmkmController@show');
 
+Route::get('/voucher', 'VoucherController@viewIndex');
+
+
+
 Route::get('/categories/{category:name}', 'CategoryController@show');
 
 Route::get('/rating/{rating:umkm_id}', 'RatingController@viewRating');

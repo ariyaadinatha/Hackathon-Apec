@@ -12,12 +12,12 @@
 <div class="container">
     <header>
         <div class="logo">
-            <a href="#">Travée</a>
+            <a href="/landing">Travée</a>
         </div>
         <nav>
             <ul>
                 <li><a href="/umkm">Explore</a></li>
-                <li><a href="#">Vouchers</a></li>
+                <li><a href="/voucher">Vouchers</a></li>
                 <li><a href="/login">Login</a></li>
             </ul>
         </nav>
