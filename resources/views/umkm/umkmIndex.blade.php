@@ -23,7 +23,7 @@ $padded = sprintf('%0.2f', $rating);
 
 <div class="col-sm-4 pt-3">
     <div class="card bg-dark text-white">
-        <img class="card-img" src="/img/sample1.jpg" alt="Card image">
+        <img class="card-img" src="/{{$umkm->image}}" alt="Card image">
         <div class="card-img-overlay">
             <h5 class="card-title"> {{$umkm->name}} </h5>
             <p class="card-text">Safety rating : {{$padded}}</p>

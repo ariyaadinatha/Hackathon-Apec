@@ -38,10 +38,20 @@ class UmkmController extends Controller
 
     public function store(Request $request)
     {
+        $image = request()->file('image');
+        $imgname = request()->file('image')->getClientOriginalName();
+        $imageUrl = $image->storeAs("img/umkms", "{$imgname}.{$image->extension()}");
+        
+        $userId = Auth::id();
         Umkm::create([
+            'user_id' => $userId,
             'name' => $request->name,
-            'category' => $request->category,
+            'location' => $request->location,
+            'country' => $request->country,
             'description' => $request->description,
+            'protocol' => $request->protocol,
+            'gov_protocol' => $request->gov_protocol,
+            'image' => $imageUrl,
         ]);
 
         return redirect()->to('/umkm/');

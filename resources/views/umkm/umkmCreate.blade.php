@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <form action="/umkm/store" enctype="multipart/form-data" method="post">
+    <form action="/umkm/store" enctype="multipart/form-data" method="post" >
         @csrf
 
         <div class="row">
@@ -20,12 +20,13 @@
             </div>
         </div>
 
+
         <div class="row">
             <div class="col-8 offset-2">
                 <div class="form-group">
-                    <label for="category" class="col-form-label"> Category </label>
-                        <input id="category" type="text" class="form-control @error('category') is-invalid @enderror" 
-                        name="category" value="{{ old('category') }}" required autocomplete="category" autofocus>
+                    <label for="location" class="col-form-label"> location </label>
+                        <input id="location" type="text" class="form-control @error('location') is-invalid @enderror" 
+                        name="location" value="{{ old('location') }}" required autocomplete="location" autofocus>
                             @error('caption')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -34,6 +35,22 @@
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="form-group">
+                    <label for="country" class="col-form-label"> country </label>
+                        <input id="country" type="text" class="form-control @error('country') is-invalid @enderror" 
+                        name="country" value="{{ old('country') }}" required autocomplete="country" autofocus>
+                            @error('caption')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                </div>
+            </div>
+        </div>
+
 
         <div class="row">
             <div class="col-8 offset-2">
@@ -53,9 +70,9 @@
         <div class="row">
             <div class="col-8 offset-2">
                 <div class="form-group">
-                    <label for="rating" class="col-form-label"> rating </label>
-                        <input id="rating" type="text" class="form-control @error('rating') is-invalid @enderror" 
-                        name="rating" value="{{ old('rating') }}" required autocomplete="rating" autofocus>
+                    <label for="protocol" class="col-form-label"> protocol </label>
+                        <input id="protocol" type="text" class="form-control @error('protocol') is-invalid @enderror" 
+                        name="protocol" value="{{ old('protocol') }}" required autocomplete="protocol" autofocus>
                             @error('caption')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -64,6 +81,41 @@
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="form-group">
+                    <label for="gov_protocol" class="col-form-label"> gov_protocol </label>
+                        <input id="gov_protocol" type="text" class="form-control @error('gov_protocol') is-invalid @enderror" 
+                        name="gov_protocol" value="{{ old('gov_protocol') }}" required autocomplete="gov_protocol" autofocus>
+                            @error('caption')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="form-group">
+                    <label for="image" class="col-form-label"> image </label>
+                        <input id="image" type="file" class="form-control @error('image') is-invalid @enderror" 
+                        name="image" required autocomplete="image" autofocus>
+                            @error('caption')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                </div>
+            </div>
+        </div>
+
+
+
+
+
 
         <div>
             <div class="row pt-3">

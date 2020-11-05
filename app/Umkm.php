@@ -8,7 +8,7 @@ class Umkm extends Model
 {
     protected $table = 'umkms';
 
-    protected $fillable = ['name', 'category', 'description', 'rating', 'umkm_id'];
+    protected $fillable = ['user_id','name', 'location', 'country','description', 'protocol', 'gov_protocol','image','umkm_id'];
 
     public function category()
     {
