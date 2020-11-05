@@ -10,6 +10,13 @@ nav {
     background-position-y: 12vw;
 }
 
+.heroprofile {
+    display: flex;
+    justify-content: center;
+    background-image: url("/img/leafgreenbar-main.png");
+    background-repeat: no-repeat;
+}
+
 .bgleaf {
     background-image: url("/img/leafgreenbar-main.png");
     background-repeat: no-repeat;
