@@ -1,6 +1,6 @@
-# To Do List
+# Note
 1. Fungsi beli voucher
-2. Kepemilikan voucher
+2. Jangan lupa setting config file "filesystem.php" ke database public
 
 
 
