@@ -4,7 +4,7 @@ use App\Rating;
 ?>
 @section('content')
 
-<div class="container-fluid hero d-flex main-1">
+<div class="container-fluid hero d-flex">
   <div class="row">
         <div class="col-lg-6 d-flex flex-row-reverse">
             <div class="mr-3"> 
@@ -42,7 +42,7 @@ use App\Rating;
                         <img class="card-img" src="/img/sample1.jpg" alt="Card image">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title"> {{$umkm->name}} </h5>
+                                <h5 class="card-title"> <a href="/umkm/{{$umkm->id}}"> {{$umkm->name}} </a> </h5>
                                     <p class="card-text">Safety rating : {{$padded}} </p>
                             </div>
                         </div>

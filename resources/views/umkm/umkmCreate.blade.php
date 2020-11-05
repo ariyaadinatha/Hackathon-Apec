@@ -1,5 +1,6 @@
 @extends('template.main')
 
+@section('content')
 <div class="container">
     <form action="/umkm/store" enctype="multipart/form-data" method="post">
         @csrf
@@ -74,4 +75,4 @@
 
     </form>
 </div>
-
+@endsection

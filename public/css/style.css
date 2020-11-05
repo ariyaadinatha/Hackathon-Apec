@@ -26,15 +26,6 @@ header {
     font-size: 1.7vw;
 }
 
-nav ul {
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 2vw;
-    font-style: italic;
-}
-
 .hero .container {
     display: flex;
     justify-content: center;

@@ -58,6 +58,6 @@ class UmkmController extends Controller
             'star' => $request->star,
         ]);
 
-        return redirect()->to('/umkm/');
+        return back();
     }
 }
