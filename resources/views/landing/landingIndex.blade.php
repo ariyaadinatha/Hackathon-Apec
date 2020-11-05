@@ -54,13 +54,20 @@ use App\Rating;
             <h2>Best Safety ratings</h2>
             <div class="row">
                 @foreach($umkms->take(4) as $umkm)
+                <!-- abaikan pls -->
+                <?php
+                    $rating = Rating::where('umkm_id', $umkm->id)
+                            ->avg('star');
+                    $padded = sprintf('%0.2f', $rating);
+                ?>
+                <!-- abaikan pls -->
                 <div class="col-lg-3 pb-2">
                     <div class="card bg-dark text-white">
                         <img class="card-img" src="/img/sample1.jpg" alt="Card image">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title"> {{$umkm->name}} </h5>
-                                    <p class="card-text">Safety rating : 5</p>
+                                <h5 class="card-title"> <a href="/umkm/{{$umkm->id}}"> {{$umkm->name}} </a> </h5>
+                                    <p class="card-text">Safety rating : {{$padded}} </p>
                             </div>
                         </div>
                     </div>
@@ -71,13 +78,20 @@ use App\Rating;
             <h2>Visit and rate these places to earn Travée-Points</h2>
             <div class="row">
                 @foreach($umkms->take(4) as $umkm)
+                <!-- abaikan pls -->
+                <?php
+                    $rating = Rating::where('umkm_id', $umkm->id)
+                            ->avg('star');
+                    $padded = sprintf('%0.2f', $rating);
+                ?>
+                <!-- abaikan pls -->
                 <div class="col-lg-3 pb-2">
                     <div class="card bg-dark text-white">
                         <img class="card-img" src="/img/sample1.jpg" alt="Card image">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title"> {{$umkm->name}} </h5>
-                                    <p class="card-text">Safety rating : 5</p>
+                                <h5 class="card-title"> <a href="/umkm/{{$umkm->id}}"> {{$umkm->name}} </a> </h5>
+                                    <p class="card-text">Safety rating : {{$padded}} </p>
                             </div>
                         </div>
                     </div>
@@ -88,13 +102,20 @@ use App\Rating;
             <h2>Destination categories</h2>
             <div class="row">
                 @foreach($umkms->take(4) as $umkm)
+                <!-- abaikan pls -->
+                <?php
+                    $rating = Rating::where('umkm_id', $umkm->id)
+                            ->avg('star');
+                    $padded = sprintf('%0.2f', $rating);
+                ?>
+                <!-- abaikan pls -->
                 <div class="col-lg-3 pb-2">
                     <div class="card bg-dark text-white">
                         <img class="card-img" src="/img/sample1.jpg" alt="Card image">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title"> {{$umkm->name}} </h5>
-                                    <p class="card-text">Safety rating : 5</p>
+                                <h5 class="card-title"> <a href="/umkm/{{$umkm->id}}"> {{$umkm->name}} </a> </h5>
+                                    <p class="card-text">Safety rating : {{$padded}} </p>
                             </div>
                         </div>
                     </div>
