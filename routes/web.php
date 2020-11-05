@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function() {return redirect()->to("/landing");});
+
 Route::get('/landing', 'PageRequestController@viewLanding');
 Route::get('/register', 'PageRequestController@viewRegister');
 Route::get('/user', 'PageRequestController@viewUser');
@@ -24,6 +25,10 @@ Route::get('/umkm/create', 'UmkmController@create');
 Route::post('/umkm/store', 'UmkmController@store');
 Route::post('/umkm/post', 'UmkmController@post');
 Route::get('/umkm/{umkm:id}', 'UmkmController@show');
+
+Route::get('/profile/{user:id}', 'ProfileController@show');
+
+
 
 Route::get('/voucher', 'VoucherController@viewIndex');
 Route::post('/voucher/buy', 'VoucherController@buy');

@@ -1,0 +1,52 @@
+nav {
+    font-size: 30px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    background-image: url("/img/leafgreenbar-main.png");
+    background-repeat: no-repeat;
+}
+
+.bgleaf {
+    background-image: url("/img/leafgreenbar-main.png");
+    background-repeat: no-repeat;
+    background-size: 30% 90%;
+}
+
+.centerItem {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-size: 80px;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+.hero-text {
+    height: 85%;
+}
+
+.main-1 {
+    background: url("/img/background-main-scroll-secondpart.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+
+.main-2 {
+    background: url("/img/background-main-scroll-thirdpart.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+
+.hp {
+    height: 60vh;
+    object-fit: cover;
+}
