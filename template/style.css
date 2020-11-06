@@ -333,3 +333,71 @@ nav ul li {
 .register .login-form {
     margin-top: -3em;
 }
+
+.voucher-title {
+    background: url("./img/background-voucher-title.jpg");
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+.voucher-text {
+    text-align: center;
+}
+
+.voucher-text-container {
+    display: flex;
+    justify-content: center;
+}
+
+.voucher-text h2 {
+    width: 50%;
+    font-weight: 400;
+}
+
+.voucher-text span {
+    text-decoration: underline;
+}
+
+.voucher-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 6em;
+    grid-row-gap: 3em;
+}
+
+.voucher-item {
+    background: #ffefcc;
+    padding: 1em;
+}
+
+.voucher-item h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.voucher-item h4 {
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+    margin-bottom: 1em;
+}
+
+.voucher-item p {
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.voucher-item button {
+    border-style: none;
+    padding: 0.5em 2em;
+    background: #ddd;
+    font-size: 1em;
+    font-style: italic;
+    font-family: "IM Fell French Canon";
+}
