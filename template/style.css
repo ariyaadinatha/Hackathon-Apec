@@ -401,3 +401,62 @@ nav ul li {
     font-style: italic;
     font-family: "IM Fell French Canon";
 }
+
+.profile-title {
+    text-align: center;
+    background: url("./img/leafgreenbar-profile-long.png");
+    font-size: 1.5em;
+    padding: 0;
+}
+
+.profile-title h2 {
+    padding: 0.5em;
+    font-weight: 400;
+}
+
+.profile-top-left {
+    margin-right: 10em;
+}
+
+.profile-top {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile-textbox {
+    width: 100%;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile-top h4 {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.profile-top p {
+    padding: 0.2em 10em;
+    margin: 0;
+    border: 1px solid black;
+}
+
+.register-business button {
+    border-style: none;
+    padding: 0.5em 2em;
+    background: #ddd;
+    font-size: 1em;
+    font-style: italic;
+    font-family: "IM Fell French Canon";
+    width: 20%;
+    margin: 1em;
+}
+
+.register-business {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
