@@ -1,115 +1,155 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('template.new')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
-</head>
+@section('css')
+<link rel="stylesheet" href="/css/style.css">
+@endsection
 
-<body>
-    <section class="umkm-detail-title">
-        <article class="container">
-            <h1 class="title">
-                /Nusa Island/
-            </h1>
-            <div class="detail">
-                <div class="desc">
-                    Nusa Penida is an island southeast of Indonesia's island Bali and a district of Klungkung Regency
-                    that includes the
-                    neighbouring small island of Nusa Lembongan. The Badung Strait separates the island and Bali. The
-                    interior of Nusa Penida
-                    is hilly with a maximum altitude of 524 metres. It is drier than the nearby island of Bali. It is
-                    one of the major tourist
-                    attractions among the three Nusa islands and is rich in natural beauty.
+@section('content')
+    <div class="hero">
+        <div class="container">
+
+            <div class="left-hero">
+                <img src="/img/phone-picture.png" alt="">
+            </div>
+            <div class="right-hero">
+                <h1>Travel safer than ever, with Travée</h1>
+                <p>get up to date safety ratings or rate places you've been to based on their safety measures</p>
+                <input type="text" placeholder="search for destinations">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main-1">
+        <div class="container">
+            <div class="main-scroll">
+                <h2>Places around you</h2>
+                <div class="items-container">
+
+
+                @foreach($umkms->take(4) as $umkm)
+                <!-- abaikan pls -->
+                <?php
+                    $rating = Rating::where('umkm_id', $umkm->id)
+                            ->avg('star');
+                    $padded = sprintf('%0.2f', $rating);
+                ?>
+
+                    <div class="item" style="background: url('/{{$umkm-image}}')">
+                        <div class="item-text">
+                            <a href="/umkm/{{$umkm->id}}" class="">{{$umkm->name}}</a>
+                            <p>Safety rating : {{$padded}}</p>
+                        </div>
+                    </div>
+
+
+                @endforeach
+
+
                 </div>
             </div>
-            <div class="location">
-                Location : Bali, Indonesia
-            </div>
-        </article>
-    </section>
+            <div class="main-scroll">
+                <h2>Best Safety ratings</h2>
+                <div class="items-container">
 
-    <section class="review-info container">
-        <div class="info">
-            Information on <span class="underlined">safety gudelines </span> and <span class="underlined">reviews</span>
-            listed below
-        </div>
-        <img src="/img/button-down.png" alt="">
-    </section>
 
-    <section class="prot container">
-        <h3>Health & Safety Protocols</h3>
-        <section class="health">
-            <article>
-                <h4>Goverment Protocols</h4>
-                <ul>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et turpis
-                        laoreet, sed congue dui
-                        vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et
-                        turpis
-                        laoreet, sed congue dui
-                        vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et
-                        turpis
-                        laoreet, sed congue dui
-                        vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et
-                        turpis
-                        laoreet, sed congue dui
-                        vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et
-                        turpis
-                        laoreet, sed congue dui
-                        vulputate.</p>
-                </ul>
-            </article>
-            <article>
-                <h4>Local Administration Protocols</h4>
-                <ul>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et turpis
-                        laoreet, sed congue dui
-                        vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et
-                        turpis
-                        laoreet, sed congue dui
-                        vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo enim et
-                        t
-                        vulputate.</p>
-                </ul>
-            </article>
-        </section>
-    </section>
 
-    <section class="user-review container">
-        <div class="write-review">
-            <h2>Safety Reviews (Overall 4.3 stars)</h2>
-            <h3>Give your safety rating here</h3>
-            <input type="text" class="review" placeholder="review...">
-            <div class="write-review-bottom">
-                <input type="text" class="rating" placeholder="1 - 5 stars">
-                <button>Submit</button>
-            </div>
-        </div>
+                @foreach($umkms->take(4) as $umkm)
+                <!-- abaikan pls -->
+                <?php
+                    $rating = Rating::where('umkm_id', $umkm->id)
+                            ->avg('star');
+                    $padded = sprintf('%0.2f', $rating);
+                ?>
 
-        <div class="top-review">
-            <ul>
-                <li>
-                    <h3>Name</h3>
-                    <p>"Pretty impressed by the administration, although I saw a couple of people not wearing masks."
-                    </p>
-                    <div class="rating-score">
-                        ★★★★★
+                    <div class="item">
+                        <div class="item-text">
+                            <a href="/umkm/{{$umkm->id}}" class="">{{$umkm->name}}</a>
+                            <p>Safety rating : {{$padded}}</p>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <h3>Name</h3>
-                    <p>"Pretty impressed by the administration, although I saw a couple of people not wearing masks."
-                    </p>
-                    <div class="rating-score">
-                        ★★★★★
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-</body>
 
-</html>
+
+                @endforeach
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="main-2">
+        <div class="container">
+            <div class="main-scroll">
+                <h2>Visit and rate these places to earn Travée-Points</h2>
+                <div class="items-container">
+
+
+
+                @foreach($umkms->take(4) as $umkm)
+                <!-- abaikan pls -->
+                <?php
+                    $rating = Rating::where('umkm_id', $umkm->id)
+                            ->avg('star');
+                    $padded = sprintf('%0.2f', $rating);
+                ?>
+
+                    <div class="item">
+                        <div class="item-text">
+                            <a href="/umkm/{{$umkm->id}}" class="">{{$umkm->name}}</a>
+                            <p>Safety rating : {{$padded}}</p>
+                        </div>
+                    </div>
+
+
+                @endforeach
+
+
+
+                </div>
+            </div>
+
+            <div class="main-scroll">
+                <h2>Destination categories</h2>
+                <div class="items-container">
+                    <div class="item">
+
+                        <div class="item-text">
+                            <a href="#" class="">Pura Tanah Lot</a>
+                            <p>Safety rating : 5</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-text">
+                            <a href="#" class="">Pura Tanah Lot</a>
+                            <p>Safety rating : 5</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-text">
+                            <a href="#" class="">Pura Tanah Lot</a>
+                            <p>Safety rating : 5</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-text">
+                            <a href="#" class="">Pura Tanah Lot</a>
+                            <p>Safety rating : 5</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-text">
+                            <a href="#" class="">Pura Tanah Lot</a>
+                            <p>Safety rating : 5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+@endsection

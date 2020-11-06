@@ -32,6 +32,8 @@ Route::get('/profile/{user:id}', 'ProfileController@show');
 
 Route::get('/voucher', 'VoucherController@viewIndex');
 Route::post('/voucher/buy', 'VoucherController@buy');
+Route::get('/voucher/create', 'VoucherController@create');
+Route::post('/voucher/store', 'VoucherController@store');
 Route::get('/voucher/{voucher:id}', 'VoucherController@show');
 
 

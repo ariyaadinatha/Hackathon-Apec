@@ -26,15 +26,6 @@ header {
     font-size: 1.7vw;
 }
 
-nav ul {
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 2vw;
-    font-style: italic;
-}
-
 .hero .container {
     display: flex;
     justify-content: center;
@@ -71,6 +62,15 @@ nav ul li {
     font-size: 1.4vw;
 }
 
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 2vw;
+    font-style: italic;
+}
+
 .main-scroll {
     margin-bottom: 6vw;
 }
@@ -82,6 +82,7 @@ nav ul li {
 }
 
 .main-scroll .item {
+    background: url("/img/sample1.jpg");
     background-size: 100%;
     border-radius: 0.2em;
     padding-top: 5em;
@@ -132,6 +133,7 @@ nav ul li {
 .umkm-detail-title {
     text-align: center;
     max-width: 100%;
+    background-image: url("/img/nusapenida.jpg");
     background-size: cover;
     padding-bottom: 0;
     margin-top: 7vw;
@@ -270,221 +272,4 @@ nav ul li {
 
 .top-review p {
     margin: 0.2vw;
-}
-
-.login-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.login-form h1 {
-    font-size: 5.5vw;
-    font-weight: 400;
-    margin-bottom: 0.3em;
-}
-
-.login-form input {
-    width: 30%;
-    font-family: "IM Fell French Canon";
-    margin: 0.5vw 0;
-    padding: 0.5em 0;
-    text-align: center;
-    font-size: 1em;
-}
-
-.login-opt {
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.login-btn {
-    border-style: none;
-    padding: 0.5em 2em;
-    background: #ddd;
-    font-size: 1em;
-    margin-top: 1.2em;
-    font-style: italic;
-    font-family: "IM Fell French Canon";
-}
-
-.login {
-    background: url("/img/background-signin.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-y: -20vw;
-    padding-bottom: 9.5vw;
-}
-
-.register {
-    background: url("/img/background-main-scroll-thirdpart.png") no-repeat
-        center fixed;
-    background-size: cover;
-    padding-bottom: 5vw;
-    /* background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-y: -20vw; */
-}
-
-.register .login-form {
-    margin-top: -3em;
-}
-
-.voucher-title {
-    background: url("/img/background-voucher-title.jpg");
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-top: 1em;
-    text-align: center;
-    font-size: 1.5em;
-    color: white;
-}
-
-.voucher-text {
-    text-align: center;
-}
-
-.voucher-text-container {
-    display: flex;
-    justify-content: center;
-}
-
-.voucher-text h2 {
-    width: 50%;
-    font-weight: 400;
-}
-
-.voucher-text span {
-    text-decoration: underline;
-}
-
-.voucher-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 6em;
-    grid-row-gap: 3em;
-}
-
-.voucher-item {
-    background: #ffefcc;
-    padding: 1em;
-}
-
-.voucher-item h3 {
-    padding: 0;
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.voucher-item h4 {
-    padding: 0;
-    margin: 0;
-    font-weight: 100;
-    margin-bottom: 1em;
-}
-
-.voucher-item p {
-    font-weight: 900;
-    margin: 0;
-    margin-bottom: 1em;
-}
-
-.voucher-item button {
-    border-style: none;
-    padding: 0.5em 2em;
-    background: #ddd;
-    font-size: 1em;
-    font-style: italic;
-    font-family: "IM Fell French Canon";
-}
-
-.profile-title {
-    text-align: center;
-    background: url("/img/leafgreenbar-profile-long.png");
-    font-size: 1.5em;
-    padding: 0;
-}
-
-.profile-title h2 {
-    padding: 0.5em;
-    font-weight: 400;
-}
-
-.profile-top-left {
-    margin-right: 10em;
-}
-
-.profile-top {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.profile-textbox {
-    width: 100%;
-    margin-bottom: 2em;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.profile-top h4 {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 0.5em;
-}
-
-.profile-top p {
-    padding: 0.2em 10em;
-    margin: 0;
-    border: 1px solid black;
-}
-
-.register-business button {
-    border-style: none;
-    padding: 0.5em 2em;
-    background: #ddd;
-    font-size: 1em;
-    font-style: italic;
-    font-family: "IM Fell French Canon";
-    width: 20%;
-    margin: 1em;
-}
-
-.register-business {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.business-form {
-    background: none;
-}
-
-.business-form textarea {
-    font-family: "IM Fell French Canon";
-    padding: 1em;
-    font-size: 1.2em;
-}
-
-.business-form h2 {
-    font-weight: 400;
-    font-size: 1.4em;
-}
-
-.buy-voucher {
-    text-align: center;
-}
-
-.buy-voucher button {
-    border-style: none;
-    padding: 0.5em 2em;
-    background: #ddd;
-    font-size: 1em;
-    font-style: italic;
-    font-family: "IM Fell French Canon";
-    width: 20%;
-    margin: 1em;
 }

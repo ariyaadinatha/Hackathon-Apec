@@ -1,4 +1,8 @@
-@extends('layouts.app')
+@extends('template.new')
+
+@section('css')
+<link rel="stylesheet" href="/css/style.css">
+@endsection
 
 @section('content')
 <div class="container">
