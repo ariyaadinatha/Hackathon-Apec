@@ -460,3 +460,18 @@ nav ul li {
     flex-direction: column;
     align-items: center;
 }
+
+.business-form {
+    background: none;
+}
+
+.business-form textarea {
+    font-family: "IM Fell French Canon";
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+.business-form h2 {
+    font-weight: 400;
+    font-size: 1.4em;
+}
