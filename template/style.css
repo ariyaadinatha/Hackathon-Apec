@@ -475,3 +475,18 @@ nav ul li {
     font-weight: 400;
     font-size: 1.4em;
 }
+
+.buy-voucher {
+    text-align: center;
+}
+
+.buy-voucher button {
+    border-style: none;
+    padding: 0.5em 2em;
+    background: #ddd;
+    font-size: 1em;
+    font-style: italic;
+    font-family: "IM Fell French Canon";
+    width: 20%;
+    margin: 1em;
+}
